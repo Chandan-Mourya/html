@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #fffafb;
+        /* background-color: teal; */
+      }
+    #heading{
+        margin-top: 30px;
+        text-align: center;
+        font-size:large;
+        font-family: 'Poppins', sans-serif;
+      }
+      #heading > h1:first-child{
+        font-size: 20px;
+        color: #555;
+      }
+      #hiring{
+        /* border: 1px solid red; */
+        /* height: 300px; */
+        width: 80%;
+        margin: auto;
+        margin-top: 50px;
+        display:grid;
+        /* grid-template-rows: repeat(2, 80px); */
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: auto;
+       gap:50px;
+       padding-top: 50px;
+       padding-left: 10px;
+       padding-right: 10px;
+      
+       }
+       img{
+         border-radius: 20px;
+       }
+       .btn{
+         margin-top: 50px;
+         text-align: center;
+         height: auto;
+         width: auto;
+        
+       }
+       button{
+        padding:10px 15px 10px 15px;
+         border-radius: 8px;
+         border: red 1px solid;
+         color: red;
+         background-color: #fffafb;
+       }
+
+      /* image dimensions are 112x112 */
+      
+      @media all and (min-width:421px) and (max-width:765px){
+        #hiring{
+           grid-template-columns: repeat(4, 1fr);
+      }  
+    }
+      
+      @media all and (min-width:81px) and (max-width:420px){
+        #hiring{
+           grid-template-columns: repeat(2, 1fr);
+        }
+           #heading{
+      
+        font-size:small;
+       
+      }
+      #heading > h1:first-child{
+        font-size: 10px;
+       
+      }
+           
+      }  
+
+    
+    </style>
+  </head>
+  <body>
+    <div id="heading">
+      <h1>Have a Dream Company In Mind?</h1>
+      <h1>Meet Our 700+ Hiring Partners</h1>
+    </div>
+    <!-- Hiring company section -->
+    <div id="hiring">
+        <!-- Hiring company logos section -->
+        <div>
+          <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/eatfit_9dc276a187.svg" alt="">
+        </div>
+        <div>
+          <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/dream11_d6c8d97a52.svg" alt="">
+        </div>
+        <div>
+          <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/urbanpiper_2884348a0b.svg" alt="">
+        </div>
+        <div>
+          <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/airmeet_93e45faced.svg" alt="">
+        </div>
+        <div>
+          <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_a5c1ce2bc6.svg" alt="">
+        </div>
+        <div>
+          <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/whitehat_5a86f1e308.svg" alt="">
+        </div>
+        <div>
+          <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/bharatpe_a3a5a3f552.svg" alt="">
+        </div>
+        <div>
+          <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/swiggy_bc1b88842e.svg" alt="">
+        </div>
+        <div>
+          <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/vyapar_3f3770ebb5.svg" alt="">
+        </div>
+        <div>
+          <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/pagarbook_2746958f65.svg" alt="">
+        </div>
+        <div>
+          <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/smallcase_1740bcc33f.svg" alt="">
+        </div>
+        <div>
+          <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/sharechat_23a9923a34.svg" alt="">
+        </div>
+        <div>
+          <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/ola_15b5ee2b82.svg" alt="">
+        </div>
+        <div>
+          <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/ibm_795b5429ee.svg" alt="">
+        </div>
+        <div>
+          <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/byjus_e7b97a9c80.svg" alt="">
+        </div>
+        <div>
+          <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/ajio_a16cd7a85b.svg" alt="">
+        </div>
+    </div>
+    <div class="btn"> <button>SEE MORE PARTNERS > </button></div>
+   
+  </body>
+</html>

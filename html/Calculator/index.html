@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masai Calculator</title>
+    <style>
+      h1 {
+        text-align: center;
+        font-size: 60px;
+        color: teal;
+      }
+      #calculator{
+        height: 500px;
+        width: 400px;
+        /* border: 1px solid red; */
+        margin: auto;
+        /* margin-top: 50px; */
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+         rgba(0, 0, 0, 0.22) 0px 15px 12px;
+         border-radius: 10px;
+         padding-top: 40px;
+       
+      }
+      
+       #input{
+          height: 15%;
+          width: 90%;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+         rgba(0, 0, 0, 0.22) 0px 15px 12px;
+          /* background-color:blue; */
+          margin: auto;
+          
+         }
+         #input > input{
+           height: 99%;
+           width: 99%;
+           border: 0px;
+           font-size:xx-large;
+         
+         }
+      
+      #keyboard{
+        width: 90%;
+        height: 85%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 80px);
+        gap: 10px;
+
+
+      }
+     #keyboard > button{
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+         rgba(0, 0, 0, 0.22) 0px 15px 12px;
+         margin-top: 30px;
+         margin-bottom: -20px;
+         border-radius: 15px;
+         font-size: 20px;
+         border: 0px;
+         font-weight: 900;
+
+        
+      }
+      .red{
+        background-color: red;
+        color: white;
+      }
+      .black{
+        background-color: black;
+        color: white
+      }
+      #keyboard > button:hover{
+        background-color: teal;
+      }
+
+      @media all and (min-width:81px) and (max-width:420px){
+        h1 {
+        text-align: center;
+        font-size: 40px;
+        color: teal;
+      }
+
+    }
+
+      /* use grid to acheive the layout */
+    </style>
+  </head>
+  <body>
+    <h1>Masai Calculator</h1>
+    <div id="calculator">
+      <div id="input">
+        <input type="number">
+      </div>
+      <div id="keyboard">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button class="black">+</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button class="black">-</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button class="black">*</button>
+        <button class="red">C</button>
+        <button>0</button>
+        <button class="black">=</button>
+        <button class="black">/</button>
+
+      </div>
+    </div>
+  </body>
+</html>
