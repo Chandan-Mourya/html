@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music liste</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      #top-section> .heading{
+        /* border: 1px solid blue; */
+        text-align: center;
+        width: 60%;
+        margin: auto;
+        margin-bottom: 50px;
+
+      
+      }
+      #music{
+        /* border: 1px solid teal; */
+        display: grid;
+        width: 80%;
+        margin: auto;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+
+      }
+      #music > div{
+        
+        /* width: 90%; */
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        /* border: 1px solid black; */
+        text-align: center;
+        /* padding:0px; */
+      }
+      img{
+        height: 150px;
+        width: 150px;
+        padding-left: 5px;
+      }
+      #music > div >h2{
+        margin-bottom: 0px;
+      }
+      .heading{
+        
+       text-align: center;
+       width: 60%;
+        margin: auto;
+        margin-top: 20px;
+      }
+      
+     
+
+      
+      #pricing{
+        /* border: 2px solid teal; */
+        display: grid;
+        width: 80%;
+        margin: auto;
+        margin-top: 50px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+      }
+
+      #pricing > div{
+        /* border: 1px solid black; */
+        margin: auto;
+        width: 80%;
+        border-radius: 15px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        /* display: flex;
+        flex-direction: column; */
+      }
+      #pricing > div > p{
+        color: #55c;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 30px;
+        margin-left: 10px;
+      }
+      li{
+        padding-bottom: 15px;
+        color: #7bc;
+        font-size: 20px;
+        font-weight: 500;
+
+      }
+      #pricing > div > hr{
+        border: 02 solid #55c;
+      }
+      h3{
+        margin-left: 10px;
+      }
+      button{
+        padding: 10px 25px 10px 25px;
+        margin-left: 15px;
+        background-color: #55b;
+        color: white;
+        border-radius: 10px;
+        margin-bottom: 10px;
+      }
+
+
+      /* Medium screens - take min width and max width according to your screen sizes */
+      @media all and (min-width: 401px) and (max-width: 720px) {
+        #top-section> .heading{
+          width: 85%;
+        }
+
+        #music{
+          grid-template-columns: repeat(2, 1fr);
+          
+        }
+        #music > div{
+          
+        }
+        #pricing{
+          grid-template-columns: repeat(2, 1fr);
+          width: 90%;
+         
+        }
+        #pricing > div{
+          margin-top: 20px;
+          width: 90%;
+          
+        }
+        img{
+       
+        padding-left: 5px;
+      }
+
+      }
+
+      /* Small screens - take min width and max width according to your screen sizes */
+
+      @media all and (min-width: 81px) and (max-width: 400px) {
+        
+        #music{
+          grid-template-columns: repeat(1, 1fr);
+          
+        }
+        #pricing{
+          grid-template-columns: repeat(1, 1fr);
+          width: 100%;
+          margin: auto;
+                }
+        #pricing > div{
+          margin-top: 20px;
+          width: 90%;
+          margin: auto;        }
+        li{
+          font-size: 15px;
+        }
+        .heading{
+            width: 95%;
+        }
+       img{
+         height: 80px;
+         width: 80px;
+       }
+
+
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Do not change class names and IDs -->
+
+    <!-- Top section -->
+    <div id="top-section">
+      <div class="heading">
+        <h1>Get ready for seamless online music</h1>
+        <p>
+          Utrust is a seamless integration that gives e-commerce businesses the
+          power to accept digital currencies - and get all the benefits you
+          can’t with just traditional payment methods.
+        </p>
+      </div>
+
+      <!-- Music cards -->
+      <div id="music">
+        <div>
+          <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-03-13/1_313769.jpeg" alt="">
+          <h2>Offline mode</h2>
+          <p>Save and listen anywhere</p>
+        </div>
+        <div>
+          <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-03-13/2_656773.jpeg" alt="">
+          <h2>Offline mode</h2>
+          <p>Save and listen anywhere</p>
+        </div>
+        <div>
+          <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-03-13/3_837237.jpeg" alt="">
+          <h2>Offline mode</h2>
+          <p>Save and listen anywhere</p>
+        </div>
+        <div>
+          <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-03-13/4_842327.jpeg" alt="">
+          <h2>Offline mode</h2>
+          <p>Save and listen anywhere</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- bottom section -->
+
+    <div class="heading">
+      <h1>Listen free or subscribe to MusicLab Premium.</h1>
+      <p>
+        Utrust is a seamless integration that gives e-commerce businesses the
+        power to accept digital currencies - and get all the benefits you can’t
+        with just traditional payment methods.
+      </p>
+    </div>
+
+    <!-- Pricing cards -->
+    <div id="pricing">
+      <div>
+        <h3>MusicBox Free</h3>
+        <p>$0.00 month</p>
+        <hr>
+        <ul>
+          <li>Online Listening</li>
+          <li>Regular Audio</li>
+          <li>With Advertising</li>
+          <li>30 Skips Per Day </li>
+        </ul>
+        <button>Get Free</button>
+
+
+      </div>
+      <div>
+        <h3>MusicBox Free</h3>
+        <p>$0.00 month</p>
+        <hr>
+        <ul>
+          <li>Online Listening</li>
+          <li>Regular Audio</li>
+          <li>With Advertising</li>
+          <li>30 Skips Per Day </li>
+        </ul>
+        <button>Get Free</button>
+      </div>
+      <div>
+        <h3>MusicBox Free</h3>
+        <p>$0.00 month</p>
+        <hr>
+        <ul>
+          <li>Online Listening</li>
+          <li>Regular Audio</li>
+          <li>With Advertising</li>
+          <li>30 Skips Per Day </li>
+        </ul>
+        <button>Get Free</button>
+      </div>
+    </div>
+  </body>
+</html>
