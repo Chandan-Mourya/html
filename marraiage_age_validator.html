@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marriage Age</title>
+</head>
+<body>
+    <select name="gender" id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select>
+    <input type="number" value="" id="ag">
+    <button id="btn" onclick="checkAge()">Check</button>
+</body>
+</html>
+<script>
+    function checkAge(){
+       let age=document.getElementById("ag").value;
+       let gr=document.getElementById("gender").value;
+       if(age>18 && gr=="female"){
+           alert("eligible")
+       }
+       else{
+            alert("not eligible")
+       }
+       
+       if(age>21 && gr=="male"){
+           alert("eligible")
+       }
+       else{
+            alert("not eligible")
+       }
+    }
+</script>
